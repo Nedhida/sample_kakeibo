@@ -1,5 +1,5 @@
 <h2>固定費科目登録</h2>
-<%= form_for @fixedcost do |form| %>
-	<%= render "form", form: form %>
-	<div><%= form.submit %></div>
+<%= form_with model:@fixedcost, local: true do |f| %>
+	<%= render "form", form: f %>
+	<div><%= f.submit %></div>
 <% end %>
