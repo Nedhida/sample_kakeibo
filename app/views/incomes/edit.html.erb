@@ -1,0 +1,5 @@
+<h2>収入科目編集</h2>
+<%= form_with model:@income, local: true do |f| %>
+  <%= render "form", form: f %>
+  <div><%= f.submit %></div>
+<% end %>
